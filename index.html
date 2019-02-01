@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<script>
- var cookieName = "affiliate_id"; 
- var cookieValue = "{{URL - clickid}}"; // Insert the afforementioned URL variable surrounded by {{ }}
- var expirationTime = 2592000; // One month in seconds. Feel free to change the time
- expirationTime = expirationTime * 1000;
- var date = new Date(); 
- var dateTimeNow = date.getTime(); 
 
- date.setTime(dateTimeNow + expirationTime);
- var expirationTime = date.toUTCString();
- document.cookie = cookieName+"="+cookieValue+"; expires="+expirationTime+"; path=/; domain=." + location.hostname.replace(/^www\./i, ""); // Sets cookie for all subdomains
-</script>
 	  
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
